@@ -1,3 +1,4 @@
+
 *{
     box-sizing: border-box;
 }
@@ -5,6 +6,7 @@
 body{
     margin: 0;
     overflow-x: hidden;
+    background-color: rgb(8, 240, 240);
 }
 
 .navbar{
@@ -13,8 +15,8 @@ body{
     display: flex;
     height: 70px;
     width: 100vw;
-    background-color: rgb(27, 26, 26,0.08);
-    border-bottom: 2px solid #ffb320;
+    background-color: rgba(15, 11, 11, 0.08);
+    border-bottom: 2px solid #eb0808;
 }
 
 .navbar-s1{
@@ -55,7 +57,7 @@ body{
     width: 100%;
     padding: 10px 0px;
     text-align: center;
-    color: #ffb320;
+    color: #2420ff;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
@@ -65,19 +67,19 @@ body{
 .btn{
     height: 40px;
     width: 200px;
-    background-color: #ffb320;
+    background-color: #e8f1f1;
     border-width: 0px;
     border-radius: 20px;
-    color: white;
+    color: rgb(17, 16, 16);
     font-weight: bold;
     margin-top: 3px;
     transition: background-color 0.4s, color 0.4s,border 0.4s;
 }
 
 .btn:hover{
-    background-color: transparent;
-    color: #ffb320;
-    border: 2px solid #ffb320;
+    background-color: yellow;
+    color: #fc0707;
+    border: 2px solid #330be6;
 }
 
 .game-container{
@@ -86,16 +88,18 @@ body{
     align-items: center;
     flex-wrap: wrap;
     margin: 50px 0px 80px;
+    background-image: url("https://t3.ftcdn.net/jpg/02/71/50/04/360_F_271500423_Ls3YOwFx6DqHy4nUvAV2P0G2UQwFeQaq.jpg");
 }
 
 .game-card{
-    background-color: aliceblue;
+    background-color: rgb(10, 232, 248);
     height: auto;
     width: 300px;
     text-align: center;
     margin: 20px;
-    box-shadow: 2px 5px 10px grey;
+    box-shadow: 2px 5px 10px rgb(41, 6, 240);
     transition: transform 0.5s;
+    
 }
 
 .game-card:hover{
@@ -112,7 +116,7 @@ body{
 }
 
 .gc-content p{
-    color: grey;
+    color: rgb(5, 2, 53);
 }
 
 .head{
@@ -123,7 +127,7 @@ body{
 }
 
 .tournament{
-    background-image: url("Images/1011.jpg");
+    background-image: url("https://www.shutterstock.com/image-vector/synthwave-wireframe-net-illustration-abstract-260nw-2340297549.jpg");
     background-size: cover;
     height: 400px;
     width: 100%;
@@ -137,36 +141,37 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #252525;
+    background-color: #0aeb4d;
     height: 300px;
     width: 500px;
     padding: 10px 20px;
     margin: 20px;
+    background-image: url("https://t3.ftcdn.net/jpg/02/71/50/04/360_F_271500423_Ls3YOwFx6DqHy4nUvAV2P0G2UQwFeQaq.jpg");
 }
 
 .t-card-content{
-    color: rgb(190, 189, 189);
+    color: rgb(252, 249, 249);
     padding: 10px 25px;
 }
 
 .t-card-content h4{
-    color: #ffb320;
+    color: #f7f5fd;
 }
 
 .footer{
     height: 250px;
     width: 100%;
-    background-image: url("Images/black-banner-with-yellow-geometric-shapes_1017-32327.webp");
+    background-image: url("https://www.shutterstock.com/image-vector/digital-technology-metaverse-neon-blue-600nw-2260816645.jpg");
     background-size: cover;
     background-blend-mode:soft-light;
-    color: white;
+    color: rgb(13, 236, 13);
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
 .footer a{
-    color: white;
+    color: rgb(25, 9, 248);
 }
 
 .footer li{
