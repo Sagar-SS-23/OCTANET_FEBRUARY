@@ -1,256 +1,270 @@
-
 *{
     box-sizing: border-box;
 }
 
 body{
-    margin: 0;
-    overflow-x: hidden;
-}
-
-.navbar{
-    position: absolute;
-    z-index: 2;
-    display: flex;
-    height: 70px;
-    width: 100vw;
-    background-color: #060c07;
-    border-bottom: 2px solid #0a0303;
-    
-}
-
-.navbar-s1{
-    width: 33.3%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-.navbar-s2{
-    width: 33.3%;
-    height: 100%;
-    position: absolute;
-    z-index: 2;
-    display: flex;
-    background-color: #0f0f0f;
-    border-bottom: 2px solid #ec0e0e;
-}
-
-.navbar-s3{
-    width: 33.3%;
-    height: 100%;
-    text-align: center;
-    
-}
-
-.navbar-s2 ul{
-    display: flex;
-    height: 100%;
-    width: 100%;
     margin: 0px;
-    padding: 0px; 
+    font-family: "poppins";
 }
 
-.navbar-s2 ul li{
-    list-style-type: none;
-    width: 33.3%;
-}
-
-.navbar ul li a{
-    display: block;
-    height: 100%;
-    width: 100%;
-    padding: 10px 0px;
-    text-align: center;
-    color: #0f0f0f;
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    font-style: italic;
-}
-
-.btn{
-    height: 40px;
-    width: 200px;
-    background-color: #e6eee7ee;
-    border-width: 0px;
-    border-radius: 20px;
-    color: rgb(15, 15, 15);
-    font-weight: bold;
-    margin-top: 3px;
-    transition: background-color 0.4s, color 0.4s,border 0.4s;
-}
-
-.btn:hover{
-    background-color: #fbff09;
-    color: #0f0f0f;
-    border: 2px solid #fa143a;
-}
-
-.game-container{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 50px 0px 80px;
-    background-image: url("https://t3.ftcdn.net/jpg/02/71/50/04/360_F_271500423_Ls3YOwFx6DqHy4nUvAV2P0G2UQwFeQaq.jpg");
-    
-}
-
-.game-card{
-    background-color: rgb(247, 251, 252);
+.main-container{
     height: auto;
-    width: 300px;
-    text-align: center;
-    margin: 20px;
-    box-shadow: 2px 5px 10px rgb(13, 9, 228);
-    transition: transform 0.5s;
-}
-
-.game-card:hover{
-    transform: scale(1.04);
-}
-
-.game-card img{
-    height: 250px;
-    width: 300px;
-}
-
-.gc-content{
-    padding: 15px;
-}
-
-.gc-content p{
-    color: rgb(45, 10, 243);
-}
-
-.head{
-    text-align: center;
-    margin: 50px 0px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 900;
-}
-
-.tournament{
-    background-image: url("https://png.pngtree.com/background/20210716/original/pngtree-network-connected-digital-technology-background-design-concept-picture-image_1404870.jpg");
-    background-size: cover;
-    height: 400px;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 10px;
-}
-
-.t-card{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #d5f041;
-    height: 300px;
-    width: 500px;
-    padding: 10px 20px;
-    margin: 20px;
-    box-shadow: 2px 5px 10px rgb(13, 9, 228); ;
-}
-
-.t-card-content{
-    color: rgb(17, 17, 17);
-    padding: 10px 25px;
-}
-
-.t-card-content h4{
-    color: #0616f5;
-}
-
-.footer{
-    height: 250px;
-    width: 100%;
-    background-image: url("https://t4.ftcdn.net/jpg/03/95/77/97/360_F_395779788_eZIwrg5EW1MJ2L2w1DQnoNp2bea8ZTO3.jpg");
-    background-size: cover;
-    background-blend-mode:soft-light;
-    color: rgb(225, 241, 75);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.footer a{
-    color: rgba(241, 9, 9, 0.918);
-}
-
-.footer li{
-    list-style-type: none;
-}
-
-.footer-p1,.footer-p2{
-    width: 50%;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.slideshow-img{
-    height: 100vh;
     width: 100vw;
 }
 
-@media screen and (max-width: 1100px) {
-    .tournament{
+.img-cont{
+    background-image: url("https://blog.teamup.com/wp-content/uploads/2021/12/todo-header.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px -180px;
+    height: 45vh;
+    width: 100%;
+}
+
+.bottom-cont{
+    height: 55vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20190827/pngtree-wooden-plank-texture-wall-background-image_306975.jpg");
+}
+
+.bc1{
+    display: flex;
+    justify-content: center;
+    height: 45vh;
+    width: 48%;
+    background-color: #06044d;
+    background-image: url("https://cdn.wildrocket.io/media/JWKzdonTttBD2UGQ0R28nLSLX4I0pYdADrV1FnU6.png");
+    color: rgb(26, 11, 241);
+}
+
+.bc2{
+    height: 45vh;
+    width: 48%;
+    background-color: #06044d;
+    background-image: url("https://img.freepik.com/premium-photo/list-icon-notebook-with-completed-todo-list-3d-render_471402-428.jpg");
+}
+
+.form-container{
+    width: 100%;
+    text-align: center;
+}
+
+.task-input{
+    height: 50px;
+    width: 80%;
+    padding-left: 10px;
+    letter-spacing: 1px;
+    outline: none;
+    background-color: transparent;
+    border-width: 0px;
+    border-bottom: 2px solid #f22e2e;
+    color: rgb(7, 7, 7);
+    font-size: 17px;
+}
+
+.task-input::-webkit-input-placeholder{
+    color: white;
+}
+
+.form-head{
+    margin-bottom: 50px;
+}
+
+.form-head span{
+    color: #fc0808;
+    font-size: 45px;
+}
+
+.form-head span{
+    position: relative;
+}
+
+.form-head span::after{
+    content: "";
+    position: absolute;
+    top: 92%;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    transform: skew(50deg);
+}
+
+.submit-btn{
+    height: 45px;
+    width: 200px;
+    background-color: #10f05a;
+    color: rgb(20, 20, 20);
+    border-width: 0px;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    font-size: 16px;
+    margin-top: 50px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.task-container h1{
+    color: #0d09f3;
+    text-align: center;
+}
+
+.task-container h1 span{
+    position: relative;
+}
+
+.task-container h1 span::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    height: 4px;
+    width: 100%;
+    transform: skew(50deg);
+    background-color: rgb(231, 135, 8);
+}
+
+.task-list{
+    overflow-y: auto;
+    height: 300px;
+    width: 95%;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.task-list::-webkit-scrollbar{
+    width: 4px;
+    background-color: rgb(9, 235, 103);
+}
+
+.task-list::-webkit-scrollbar-thumb{
+    width: 4px;
+    background-color: #aa5007;
+}
+
+.task-card{
+    display: flex;
+    justify-content: space-between;
+    color: rgb(14, 13, 13);
+    margin-top: 10px;
+}
+
+.tc1{
+    width: 70%;
+    display: flex;
+}
+
+.tc2{
+    width: 30%;
+    display: flex;
+    justify-content: end;
+}
+
+.task-card input{
+    height: 28px;
+    width: 28px;
+    position: relative;
+    top: 10px;
+    margin-left: 30px;
+}
+
+.task-card label{
+    display: block;
+    margin-top: 15px;
+    margin-left: 20px;
+    font-size: 17px;
+    letter-spacing: 1px;
+    top: 6px;
+    width: 270px;
+    overflow-y: scroll;
+    height: 50px;
+    text-align: start;
+}
+
+.task-card label::-webkit-scrollbar{
+    display: none;
+}
+
+.task-card button{
+    height: 40px;
+    width: 40px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.task-card button i{
+    font-size: 20px;
+    color:#0c0c0c;
+}
+
+.task-img-cont img{
+    height: 250px;
+    width: 50%;
+}
+
+@media  screen and (max-width: 1100px) {
+    .bottom-cont{
         flex-direction: column;
         height: auto;
+        margin-bottom: 50px;
     }
-
+    .bc1,.bc2{
+        padding: 50px 30px;
+        width: 80%;
+        margin-top: 50px;
+        height: auto;
+    }
+    
 }
 
-@media screen and (max-width : 1000px){
-    .btn{
-        display: none;
+@media screen and (max-width: 700px) {
+    .task-img-cont img{
+        width: 70%;
     }
-    .navbar-s2{
+}
+
+
+@media screen and (max-width: 600px) {
+    .task-card{
+        flex-direction: column;
+    }
+    .task-card label{
         width: 100%;
     }
-    .navbar-s1,.navbar-s3{
-        display: none;
-    }
-}
-
-@media screen and (max-width : 821px){
-    .slideshow-img{
-        height: 85%;
-    }
-}
-
-@media screen and (max-width: 600px){
-    .footer-p1{
-        display: none;
-    }
-    .footer-p2{
+    .tc1,.tc2{
         width: 100%;
     }
-    .navbar ul li a{
-        font-size: 15px;
+    .task-img-cont img{
+        width: 80%;
     }
-    .t-card{
+    .bc1,.bc2{
         width: 95%;
     }
+    .img-cont{
+        background-position: 0px 0px;
+    }
 }
 
-@media screen and (max-width: 500px) {
-    .t-card{
-        flex-direction: column;
-        height: auto;
-        text-align: center;
+@media screen and (max-width: 450px) {
+    .bottom-cont{
+        margin-top: 0px;
     }
-    .navbar{
-        height: 60px;
+    .bc1,.bc2{
+        width: 98%;
+        padding: 30px 0px;
     }
-    .slideshow{
-        height: 350px;
-    }
-    .slideshow-img{
-        height: 350px;
+    .task-img-cont img{
         width: 100%;
+    }
+    .form-head span{
+        font-size: 30px;
+    }
+    .img-cont{
+        background-position: -50px 0px;
     }
 }
